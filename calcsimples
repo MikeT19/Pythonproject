@@ -1,0 +1,22 @@
+while True:
+    operação = input ('qual operação (+,*,/,-) você deseja fazer ou \'q\' para sair! ')
+    if operação == 'q' or operação == 'Q':
+        break
+    elif operação == '*' or operação == '-' or operação == '/' or operação == '+':
+        num1 = int(input ('Digite o primeiro número: '))
+        num2 = int(input ('Digite o segundo numero: '))
+
+    if operação == '+':
+        total = num1 + num2
+        print(total)
+    elif operação == '-':
+        total = num1 - num2
+        print(total)
+    elif operação == '*':
+        total = num1 * num2
+        print(total)
+    elif operação == '/':
+        total = num1 / num2
+        print(total)
+    else:
+        print('operação invalida')
